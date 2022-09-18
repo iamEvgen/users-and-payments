@@ -1,0 +1,21 @@
+@import '../components/variables.scss';
+
+.Container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.Box {
+  max-width: $boxWidth;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &__user {
+    border: 1px solid $secondGray;
+    border-radius: 5px;
+    padding: 10px;
+  }
+}
