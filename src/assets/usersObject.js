@@ -3,6 +3,8 @@ const usersData = [
     userId: 0,
     name: 'Попов Гордей',
     phone: '+7(007)580-09-83',
+    email: 'qcrooks@yahoo.com',
+    gender: 'male',
     tasks: [
       {
         taskId: 0,
@@ -37,6 +39,8 @@ const usersData = [
     userId: 1,
     name: 'Королева Марьяна',
     phone: '+7(007)980-00-68',
+    email: 'icassin@hotmail.com',
+    gender: 'female',
     tasks: [
       {
         taskId: 0,
@@ -71,6 +75,8 @@ const usersData = [
     userId: 2,
     name: 'Соколов Александр',
     phone: '+7(007)135-93-48',
+    email: 'monahan.ansley@yahoo.com',
+    gender: 'male',
     tasks: [
       {
         taskId: 0,
@@ -105,6 +111,8 @@ const usersData = [
     userId: 3,
     name: 'Морозов Степан',
     phone: '+7(007)754-00-38',
+    email: 'wendy70@gmail.com',
+    gender: 'male',
     tasks: [
       {
         taskId: 0,
@@ -137,8 +145,10 @@ const usersData = [
   },
   {
     userId: 4,
-    name: 'Богданов Илья',
+    name: 'Захарова София',
     phone: '+7(007)296-28-92',
+    email: 'bryana45@hotmail.com',
+    gender: 'female',
     tasks: [
       {
         taskId: 0,

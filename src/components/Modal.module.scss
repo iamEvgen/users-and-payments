@@ -1,0 +1,27 @@
+@import 'variables';
+
+.Modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  &_show {
+    opacity: 1;
+    pointer-events: all;
+  }
+  &__content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 300px;
+    box-shadow: 0px 0px 25px 5px $secondGray;
+  }
+}
