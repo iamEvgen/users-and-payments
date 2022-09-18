@@ -10,13 +10,16 @@ export function useUsers() {
 
 export function UserProvider({ children }) {
   const [usersData, setUsersData] = useState(usersObject);
+  const [activeUserId, setActiveUserId] = React.useState(-1);
 
   UserProvider.propTypes = {
     children: PropTypes.node.isRequired,
-  }
+  };
 
   return (
-    <UsersContext.Provider value={{ usersData, setUsersData }}>
+    <UsersContext.Provider
+      value={{ usersData, setUsersData, activeUserId, setActiveUserId }}
+    >
       {children}
     </UsersContext.Provider>
   );

@@ -8,25 +8,19 @@ import ModuleBox from '../components/Modal';
 import UserInfo from '../components/UserInfo';
 
 function Users() {
-  const { usersData } = useUsers();
+  const { usersData, setUsersData, activeUserId, setActiveUserId } = useUsers();
   const male = require(`../icons/male.png`);
   const female = require(`../icons/female.png`);
   const list = require(`../icons/list.png`);
 
   const [showModal, setShowModal] = React.useState(false);
   const [modalInfo, setModalInfo] = React.useState('');
-  const [activeUser, setActiveUser] = React.useState({});
-
-  function getUser(userId) {
-    return usersData.find((user) => +user.userId === +userId);
-  }
 
   function editUser(userId) {
+    setActiveUserId(userId);
+    setModalInfo(<UserInfo userId={userId} />);
     setShowModal(true);
-    const user = getUser(userId);
-    console.log(user);
-    setActiveUser(user);
-    setModalInfo(<UserInfo user={activeUser} />);
+    console.log(activeUserId);
   }
 
   function showToDos(userId) {
