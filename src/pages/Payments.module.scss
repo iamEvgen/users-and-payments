@@ -12,8 +12,10 @@
   @include Border;
   display: flex;
   justify-content: space-between;
+  transition: all 0.25s ease-in-out;
   &:hover {
     cursor: pointer;
+    background-color: $mainYellow;
   }
   &__amount {
     color: $mainGreen;

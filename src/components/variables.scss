@@ -1,4 +1,4 @@
-$mainBlue: #242742;
+$mainBlue: #fecb30;
 $mainRed: #d1273f;
 $mainYellow: #fecb30;
 $mainGray: #ffffe3;
@@ -24,6 +24,6 @@ $boxWidth: 400px;
 
 @mixin Border {
   border: 1px solid $secondGray;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
 }

@@ -1,9 +1,26 @@
 @import 'variables';
 
+@mixin ButtonStyle {
+  cursor: pointer;
+  border: none;
+  padding: 7px;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+
 .ToDoList {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  &__addBtn {
+    @include ButtonStyle;
+    background-color: $mainGreen;
+    max-width: 150px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }
 
 .Todo {
@@ -26,4 +43,27 @@ h2 {
   margin-top: 0;
   color: $mainRed;
   text-decoration: underline;
+}
+
+.NewTask {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  &__inputField {
+    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  &__buttons {
+    display: flex;
+    gap: 15px;
+  }
+  &__buttonApply {
+    @include ButtonStyle;
+    background-color: $mainGreen;
+    color: white;
+  }
+  &__buttonCancel {
+    @include ButtonStyle;
+    background-color: $mainRed;
+  }
 }
