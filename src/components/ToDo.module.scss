@@ -28,7 +28,7 @@
   align-items: center;
   gap: 10px;
   &__checkbox {
-    accent-color: $mainRed;
+    accent-color: $mainBlue;
     transform: scale(1.5);
   }
   &__deleteBtn {
@@ -41,7 +41,7 @@
 
 h2 {
   margin-top: 0;
-  color: $mainRed;
+  color: $mainBlue;
   text-decoration: underline;
 }
 

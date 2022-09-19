@@ -1,8 +1,7 @@
-$mainBlue: #fecb30;
-$mainRed: #d1273f;
+$mainBlue: rgb(2, 5, 24);
 $mainYellow: #fecb30;
-$mainGray: #ffffe3;
-$secondGray: #a3a3a3;
+$mainGray: #a3a3a3;
+$mainRed: #d8354b;
 $mainGreen: rgb(52, 175, 70);
 
 $boxWidth: 400px;
@@ -23,7 +22,7 @@ $boxWidth: 400px;
 }
 
 @mixin Border {
-  border: 1px solid $secondGray;
+  border: 1px solid $mainGray;
   border-radius: 10px;
   padding: 10px;
 }

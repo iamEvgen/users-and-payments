@@ -17,13 +17,13 @@
   }
   &__linkInside {
     text-decoration: none;
-    color: $mainRed;
+    color: $mainYellow;
     padding: 10px 20px;
     border-radius: 5px;
     transition: all 0.2s ease-in-out;
     &:hover {
-      color: $mainGray;
-      background-color: $mainRed;
+      color: black;
+      background-color: $mainYellow;
     }
   }
 }
