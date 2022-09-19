@@ -18,15 +18,23 @@ function Users() {
 
   function editUser(userId) {
     setActiveUserId(userId);
-    setModalInfo(<UserInfo userId={userId} />);
+    setModalInfo(
+      <UserInfo
+        closeModal={() => {
+          setShowModal(false);
+        }}
+        userId={userId}
+      />
+    );
     setShowModal(true);
-    console.log(activeUserId);
   }
 
   function showToDos(userId) {
     setShowModal(true);
     setModalInfo(<div>show ToDos</div>);
   }
+
+  console.log(usersData);
 
   const userNames = usersData.map((user) => {
     let genderIcon;

@@ -17,4 +17,14 @@
       background-color: lighten($mainBlue, 10%);
     }
   }
+  button {
+    border: none;
+    background-color: rgb(61, 216, 84);
+    font-size: 1rem;
+    padding: 7px;
+    border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
 }

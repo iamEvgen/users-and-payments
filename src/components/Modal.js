@@ -16,7 +16,7 @@ function ModuleBox({ showModal, closeModal, children }) {
     <div
       className={classNames(styles.Modal, { [styles.Modal_show]: showModal })}
       onClick={() => {
-        closeModal(false)
+        closeModal()
         setActiveUserId(-1);
       }}
     >
