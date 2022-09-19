@@ -4,11 +4,12 @@ import React from 'react';
 import { useUsers } from '../UsersContext';
 import styles from './Users.module.scss';
 import classNames from 'classnames';
-import ModuleBox from '../components/Modal';
+import Modal from '../components/Modal';
 import UserInfo from '../components/UserInfo';
+import ToDo from '../components/ToDo';
 
 function Users() {
-  const { usersData, setUsersData, activeUserId, setActiveUserId } = useUsers();
+  const { usersData, setActiveUserId } = useUsers();
   const male = require(`../icons/male.png`);
   const female = require(`../icons/female.png`);
   const list = require(`../icons/list.png`);
@@ -30,11 +31,10 @@ function Users() {
   }
 
   function showToDos(userId) {
+    setActiveUserId(userId);
+    setModalInfo(<ToDo userId={userId} />);
     setShowModal(true);
-    setModalInfo(<div>show ToDos</div>);
   }
-
-  console.log(usersData);
 
   const userNames = usersData.map((user) => {
     let genderIcon;
@@ -73,14 +73,14 @@ function Users() {
   return (
     <main className={styles.Container}>
       <div className={styles.Box}>{userNames}</div>
-      <ModuleBox
+      <Modal
         showModal={showModal}
         closeModal={() => {
           setShowModal(false);
         }}
       >
         {modalInfo}
-      </ModuleBox>
+      </Modal>
     </main>
   );
 }

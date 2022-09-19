@@ -5,18 +5,18 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { useUsers } from '../UsersContext';
 
-function ModuleBox({ showModal, closeModal, children }) {
-  ModuleBox.propTypes = {
+function Modal({ showModal, closeModal, children }) {
+  Modal.propTypes = {
     children: PropTypes.node.isRequired,
   };
 
-  const {setActiveUserId } = useUsers();
+  const { setActiveUserId } = useUsers();
 
   return (
     <div
       className={classNames(styles.Modal, { [styles.Modal_show]: showModal })}
       onClick={() => {
-        closeModal()
+        closeModal();
         setActiveUserId(-1);
       }}
     >
@@ -30,4 +30,4 @@ function ModuleBox({ showModal, closeModal, children }) {
   );
 }
 
-export default ModuleBox;
+export default Modal;

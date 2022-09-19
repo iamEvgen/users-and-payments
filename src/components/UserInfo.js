@@ -33,11 +33,8 @@ function UserInfo({ userId, closeModal }) {
 
   function saveChanges() {
     setUsersData((prevData) => {
-      const newUsersData = [ ...prevData ];
-      console.log(newUsersData);
+      const newUsersData = JSON.parse(JSON.stringify(prevData));
       newUsersData.map((user) => {
-        console.log(user);
-        console.log(formData);
         if (+user.userId === +activeUserId) {
           user.name = formData.name;
           user.phone = formData.phone;
@@ -65,6 +62,8 @@ function UserInfo({ userId, closeModal }) {
           onChange={handleChange}
           name="name"
           value={formData.name}
+          minLength="3"
+          required
         ></input>
         <input
           type="phone"
@@ -72,6 +71,8 @@ function UserInfo({ userId, closeModal }) {
           onChange={handleChange}
           name="phone"
           value={formData.phone}
+          minLength="4"
+          required
         ></input>
         <input
           type="email"
@@ -79,6 +80,8 @@ function UserInfo({ userId, closeModal }) {
           onChange={handleChange}
           name="email"
           value={formData.email}
+          minLength="5"
+          required
         ></input>
         <button>Сохранить</button>
       </form>

@@ -9,17 +9,17 @@
     line-height: 1.8rem;
     border: none;
     color: white;
-    background-color: $mainBlue;
+    background-color: $mainRed;
     border-radius: 5px;
     padding: 5px;
     &:focus {
       outline: none;
-      background-color: lighten($mainBlue, 10%);
+      background-color: lighten($mainRed, 10%);
     }
   }
   button {
     border: none;
-    background-color: rgb(61, 216, 84);
+    background-color: $mainGreen;
     font-size: 1rem;
     padding: 7px;
     border-radius: 5px;

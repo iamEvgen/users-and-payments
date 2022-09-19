@@ -1,0 +1,29 @@
+@import 'variables';
+
+.ToDoList {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.Todo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &__checkbox {
+    accent-color: $mainRed;
+    transform: scale(1.5);
+  }
+  &__deleteBtn {
+    width: 24px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+h2 {
+  margin-top: 0;
+  color: $mainRed;
+  text-decoration: underline;
+}

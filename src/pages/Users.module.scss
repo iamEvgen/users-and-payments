@@ -1,24 +1,15 @@
 @import '../components/variables.scss';
 
 .Container {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
+  @include Container;
 }
 
 .Box {
-  max-width: $boxWidth;
-  width: 100%;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  @include Box;
 }
 
 .User {
-  border: 1px solid $secondGray;
-  border-radius: 5px;
-  padding: 10px;
+  @include Border;
   display: flex;
   gap: 10px;
   align-items: center;

@@ -44,7 +44,7 @@ const usersData = [
     tasks: [
       {
         taskId: 0,
-        text: 'Повесить белье',
+        text: 'повесить белье',
         finished: false,
       },
       {
@@ -60,12 +60,12 @@ const usersData = [
     ],
     payments: [
       {
-        paymentId: 0,
+        paymentId: 2,
         date: '2020-08-04',
         amount: '400',
       },
       {
-        paymentId: 1,
+        paymentId: 3,
         date: '2020-08-15',
         amount: '550',
       },
@@ -80,7 +80,7 @@ const usersData = [
     tasks: [
       {
         taskId: 0,
-        text: 'Повесить белье',
+        text: 'повесить белье',
         finished: false,
       },
       {
@@ -96,12 +96,12 @@ const usersData = [
     ],
     payments: [
       {
-        paymentId: 0,
+        paymentId: 4,
         date: '2020-09-03',
         amount: '200',
       },
       {
-        paymentId: 1,
+        paymentId: 5,
         date: '2020-09-10',
         amount: '350',
       },
@@ -132,12 +132,12 @@ const usersData = [
     ],
     payments: [
       {
-        paymentId: 0,
+        paymentId: 6,
         date: '2020-11-01',
         amount: '250',
       },
       {
-        paymentId: 1,
+        paymentId: 7,
         date: '2020-11-15',
         amount: '550',
       },
@@ -168,12 +168,12 @@ const usersData = [
     ],
     payments: [
       {
-        paymentId: 0,
+        paymentId: 8,
         date: '2020-12-05',
         amount: '650',
       },
       {
-        paymentId: 1,
+        paymentId: 9,
         date: '2020-12-20',
         amount: '250',
       },

@@ -1,0 +1,26 @@
+@import '../components/variables.scss';
+
+.Container {
+  @include Container;
+}
+
+.Box {
+  @include Box;
+}
+
+.Payment {
+  @include Border;
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    cursor: pointer;
+  }
+  &__amount {
+    color: $mainGreen;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}

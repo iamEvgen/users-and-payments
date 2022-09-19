@@ -3,5 +3,27 @@ $mainRed: #d1273f;
 $mainYellow: #fecb30;
 $mainGray: #ffffe3;
 $secondGray: #a3a3a3;
+$mainGreen: rgb(52, 175, 70);
 
 $boxWidth: 400px;
+
+@mixin Container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin Box {
+  max-width: $boxWidth;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@mixin Border {
+  border: 1px solid $secondGray;
+  border-radius: 5px;
+  padding: 10px;
+}
