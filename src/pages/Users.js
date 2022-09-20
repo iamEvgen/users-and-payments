@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import React from 'react';
 import { useUsers } from '../UsersContext';
 import styles from './Users.module.scss';

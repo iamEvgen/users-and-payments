@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import styles from './Modal.module.scss';
 import PropTypes from 'prop-types';
@@ -8,6 +7,8 @@ import { useUsers } from '../UsersContext';
 function Modal({ showModal, closeModal, children }) {
   Modal.propTypes = {
     children: PropTypes.node.isRequired,
+    showModal: PropTypes.bool,
+    closeModal: PropTypes.func,
   };
 
   const { setActiveUserId } = useUsers();

@@ -1,8 +1,8 @@
-$mainBlue: rgb(2, 5, 24);
-$mainYellow: #fecb30;
-$mainGray: #a3a3a3;
-$mainRed: #d8354b;
-$mainGreen: rgb(52, 175, 70);
+$mainBlue: #061331;
+$mainYellow: #f6d25d;
+$mainGray: #ccc;
+$mainRed: #ec6760;
+$mainGreen: #53be87;
 
 $boxWidth: 400px;
 
@@ -25,4 +25,5 @@ $boxWidth: 400px;
   border: 1px solid $mainGray;
   border-radius: 10px;
   padding: 10px;
+  background-color: white;
 }

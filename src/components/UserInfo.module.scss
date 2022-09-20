@@ -14,7 +14,7 @@
     padding: 5px;
     &:focus {
       outline: none;
-      background-color: lighten($mainGray, 25%);
+      background-color: lighten($mainGray, 5%);
     }
   }
   button {

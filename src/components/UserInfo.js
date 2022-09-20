@@ -1,10 +1,15 @@
-/* eslint-disable */
 import React, { useEffect } from 'react';
 import { useUsers } from '../UsersContext';
 import styles from './UserInfo.module.scss';
+import PropTypes from 'prop-types';
 
 function UserInfo({ userId, closeModal }) {
   const { usersData, setUsersData, activeUserId, setActiveUserId } = useUsers();
+
+  UserInfo.propTypes = {
+    userId: PropTypes.number,
+    closeModal: PropTypes.func,
+  };
 
   const user = usersData.find((user) => +user.userId === +userId);
 

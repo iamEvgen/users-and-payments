@@ -1,13 +1,17 @@
-/* eslint-disable */
 import React from 'react';
 import styles from './ToDo.module.scss';
 import { useUsers } from '../UsersContext';
 import uniqid from 'uniqid';
+import PropTypes from 'prop-types';
 
 function ToDo({ userId }) {
   const { usersData, setUsersData, activeUserId } = useUsers();
   const [showNewTaskForm, setShowNewTaskForm] = React.useState(false);
   const [newTaskText, setNewTaskText] = React.useState('');
+
+  ToDo.propTypes = {
+    userId: PropTypes.number,
+  };
 
   const deleteBtn = require(`../icons/delete.png`);
   const user = usersData.find((user) => +user.userId === +userId);
@@ -63,6 +67,8 @@ function ToDo({ userId }) {
   }
 
   const todoList = user.tasks.map((task) => {
+    const style = task.finished ? { textDecoration: 'line-through' } : {};
+
     return (
       <div key={task.taskId} className={styles.Todo}>
         <input
@@ -74,7 +80,9 @@ function ToDo({ userId }) {
           }}
           name="finished"
         />
-        <div className={styles.Todo__text}>{task.text}</div>
+        <div style={style} className={styles.Todo__text}>
+          {task.text}
+        </div>
         <img
           className={styles.Todo__deleteBtn}
           onClick={() => deleteTask(activeUserId, task.taskId)}
