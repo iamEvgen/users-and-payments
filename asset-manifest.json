@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/users-and-payments/static/css/main.003ff614.css",
+    "main.js": "/users-and-payments/static/js/main.656e922e.js",
+    "index.html": "/users-and-payments/index.html",
+    "main.003ff614.css.map": "/users-and-payments/static/css/main.003ff614.css.map",
+    "main.656e922e.js.map": "/users-and-payments/static/js/main.656e922e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.003ff614.css",
+    "static/js/main.656e922e.js"
+  ]
+}
